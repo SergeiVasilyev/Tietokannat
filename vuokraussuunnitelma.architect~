@@ -97,19 +97,19 @@
     <column id="COL24" populated="true" UUID="ee9be428-7272-4a59-af48-8516423a908b" autoIncrement="true" autoIncrementSequenceName="tuote_yksilointikoodi_seq" defaultValue="" name="Yksilointikoodi" nullable="0" physicalName="yksilointikoodi" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
-    <column id="COL25" populated="true" UUID="7a28c0f3-c4d5-4704-885d-855b3288c3a5" autoIncrement="false" autoIncrementSequenceName="tuoteryhma_tuoteryhma_seq" defaultValue="" name="Tuoteryhma" nullable="0" physicalName="tuoteryhma" precision="20" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL25" populated="true" UUID="fb1f954c-9d7d-4201-8a26-9eed469a2d45" autoIncrement="false" autoIncrementSequenceName="tuote_nimike_seq" defaultValue="" name="Nimike" nullable="0" physicalName="nimike" precision="40" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
-    <column id="COL26" populated="true" UUID="fb1f954c-9d7d-4201-8a26-9eed469a2d45" autoIncrement="false" autoIncrementSequenceName="tuote_nimike_seq" defaultValue="" name="Nimike" nullable="0" physicalName="nimike" precision="40" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL26" populated="true" UUID="9daa5f3a-7a77-4a35-b42f-9fc94a86f2c2" autoIncrement="false" autoIncrementSequenceName="tuote_merkki_seq" defaultValue="" name="Merkki" nullable="0" physicalName="merkki" precision="20" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
-    <column id="COL27" populated="true" UUID="9daa5f3a-7a77-4a35-b42f-9fc94a86f2c2" autoIncrement="false" autoIncrementSequenceName="tuote_merkki_seq" defaultValue="" name="Merkki" nullable="0" physicalName="merkki" precision="20" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL27" populated="true" UUID="ff0ec20e-4f77-475e-b7c0-97e9ebba12c4" autoIncrement="false" autoIncrementSequenceName="tuote_malli_seq" defaultValue="" name="Malli" nullable="0" physicalName="malli" precision="20" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
-    <column id="COL28" populated="true" UUID="ff0ec20e-4f77-475e-b7c0-97e9ebba12c4" autoIncrement="false" autoIncrementSequenceName="tuote_malli_seq" defaultValue="" name="Malli" nullable="0" physicalName="malli" precision="20" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL28" populated="true" UUID="2314fc91-a010-440f-b58b-fdc7291b6c96" autoIncrement="false" autoIncrementSequenceName="tuote_paivavuokra_seq" defaultValue="" name="Paivavuokra" nullable="0" physicalName="paivavuokra" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="6" userDefinedTypeUUID="7e55bcd0-7606-4153-b749-9c397f12c4d8" >
      <remarks></remarks>
     </column>
-    <column id="COL29" populated="true" UUID="2314fc91-a010-440f-b58b-fdc7291b6c96" autoIncrement="false" autoIncrementSequenceName="tuote_paivavuokra_seq" defaultValue="" name="Paivavuokra" nullable="0" physicalName="paivavuokra" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="6" userDefinedTypeUUID="7e55bcd0-7606-4153-b749-9c397f12c4d8" >
+    <column id="COL29" populated="true" UUID="f662eee1-52ae-4801-b7e3-7b5a7e607361" autoIncrement="false" autoIncrementSequenceName="tuoteryhma_tuoteryhma_seq" defaultValue="" name="Tuoteryhma" nullable="0" physicalName="tuoteryhma" precision="20" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
     </folder>
@@ -182,8 +182,8 @@
    <relationship id="REL50" populated="true" UUID="759201c8-4e04-44e9-885f-7dada457cf0b" deferrability="7" deleteRule="3" fk-table-ref="TAB36" fkCardinality="7" identifying="false" name="tuote_vuokraus_fk" physicalName="tuote_vuokraus_fk" pk-table-ref="TAB23" pkCardinality="2" updateRule="3" >
     <column-mapping id="CMP51" populated="true" UUID="945cd19a-6e18-439b-9746-70748e9292c8" fk-column-ref="COL39" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL24" />
    </relationship>
-   <relationship id="REL52" populated="true" UUID="e80f792f-ef50-4f24-8f50-625e267bd346" deferrability="7" deleteRule="3" fk-table-ref="TAB23" fkCardinality="7" identifying="false" name="tuoteryhma_tuote_fk" physicalName="tuoteryhma_tuote_fk" pk-table-ref="TAB32" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP53" populated="true" UUID="657bf693-e28b-4dfb-b74f-7ed022d492b8" fk-column-ref="COL25" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL33" />
+   <relationship id="REL52" populated="true" UUID="50d286fd-4d74-4c2d-9e9a-d6dce90c9453" deferrability="7" deleteRule="3" fk-table-ref="TAB23" fkCardinality="7" identifying="false" name="tuoteryhma_tuote_fk" physicalName="tuoteryhma_tuote_fk" pk-table-ref="TAB32" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP53" populated="true" UUID="8763c0eb-550d-4b3f-a5f6-38257c95aef6" fk-column-ref="COL29" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL33" />
    </relationship>
   </relationships>
  </target-database>
@@ -199,9 +199,9 @@
   <table-pane table-ref="TAB36" x="692" y="192" bgColor="0xdfedce" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-link relationship-ref="REL44" pkConnection="0.23232323232323232" fkConnection="0.937007874015748" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
   <table-link relationship-ref="REL48" pkConnection="0.7209302325581395" fkConnection="0.3779527559055118" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
-  <table-link relationship-ref="REL52" pkConnection="0.5813953488372093" fkConnection="0.415929203539823" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
   <table-link relationship-ref="REL46" pkConnection="0.898989898989899" fkConnection="0.17543859649122806" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
   <table-link relationship-ref="REL50" pkConnection="0.20353982300884957" fkConnection="0.8591549295774648" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL52" pkConnection="0.6976744186046512" fkConnection="0.415929203539823" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
  </play-pen>
  <critic-manager>
   <critic-grouping platformType="Generic" enabled="true">
