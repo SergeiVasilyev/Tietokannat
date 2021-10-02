@@ -1,0 +1,2 @@
+if this.nil? then random(010101, 909090)
+else this end
