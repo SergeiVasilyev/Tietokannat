@@ -42,18 +42,24 @@
     <column id="COL9" populated="true" UUID="02d671c9-2fa6-46d2-8cd9-227826eaac06" autoIncrement="false" autoIncrementSequenceName="harrastus_nimi_seq" defaultValue="" name="Nimi" nullable="0" physicalName="nimi" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
+    <column id="COL10" populated="true" UUID="d0ce6ec7-9278-4336-be0e-34ebcb6410f5" autoIncrement="false" autoIncrementSequenceName="henkilo_henkilo_id_seq" defaultValue="" name="HenkilöID" nullable="0" physicalName="henkilo_id" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
     </folder>
     <folder id="FOLTAB73" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
     </folder>
     <folder id="FOLTAB72" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
     </folder>
     <folder id="FOLTAB74" populated="true" name="Indices" physicalName="Indices" type="4">
-    <index id="IDX10" populated="true" UUID="6c4cd673-cd83-4038-b7eb-092963985c5d" clustered="false" name="harrastus_pk" physicalName="harrastus_pk" primaryKeyIndex="true" unique="false" >
-     <index-column id="IDC11" populated="true" UUID="b96f88fb-1fe5-4b36-b58a-a6d401d0e9b8" ascendingOrDescending="UNSPECIFIED" column-ref="COL8" name="ID" physicalName="id" />
+    <index id="IDX11" populated="true" UUID="6c4cd673-cd83-4038-b7eb-092963985c5d" clustered="false" name="harrastus_pk" physicalName="harrastus_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC12" populated="true" UUID="b96f88fb-1fe5-4b36-b58a-a6d401d0e9b8" ascendingOrDescending="UNSPECIFIED" column-ref="COL8" name="ID" physicalName="id" />
     </index>
    </folder>
   </table>
   <relationships>
+   <relationship id="REL13" populated="true" UUID="e9bd2b53-01b6-43bd-a603-759770be5a7c" deferrability="7" deleteRule="0" fk-table-ref="TAB7" fkCardinality="7" identifying="false" name="henkilo_harrastus_fk" physicalName="henkilo_harrastus_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="0" >
+    <column-mapping id="CMP14" populated="true" UUID="cb3cd45e-c1db-4a61-af3e-4ea6e4759309" fk-column-ref="COL10" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL2" />
+   </relationship>
   </relationships>
  </target-database>
  <ddl-generator type="ca.sqlpower.architect.ddl.GenericDDLGenerator" allow-connection="true"> </ddl-generator>
@@ -61,7 +67,8 @@
  <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
  <play-pen zoom="1.0" viewportX="0" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
   <table-pane table-ref="TAB1" x="89" y="123" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB7" x="399" y="235" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB7" x="410" y="121" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-link relationship-ref="REL13" pkConnection="0.38028169014084506" fkConnection="0.9014084507042254" rLineColor="0xe41a1c" pkLabelText="" fkLabelText="" orientation="33"/>
  </play-pen>
  <critic-manager>
   <critic-grouping platformType="Generic" enabled="true">
