@@ -10,3 +10,4 @@ VALUES (1, 5, 1, 1, 2021-10-15, 1, 2)
 
 SELECT asiakasnumero, nimike, maara, paiva, hyllynrivi, hyllyn_osio, hyllypaikka, varastopaikka_plus, varastopaikka_minus
 FROM varastotapahtuma INNER JOIN asikas INNER JOIN tuote INNER JOIN hyllypaikka INNER JOIN varastopaikka
+ON 
